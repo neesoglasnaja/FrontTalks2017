@@ -111,7 +111,11 @@
   color: #fff;
 }
 blockquote {
-  font-size: 40px;
+  font-size: 35px;
+  line-height: 1.4;
+}
+figcaption {
+  opacity: 0.5;
 }
 .label {
   background-color: #a11212;

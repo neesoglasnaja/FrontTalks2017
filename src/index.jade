@@ -3,7 +3,7 @@ include ./blocks/cover.jade
 include ./blocks/quote.jade
 include ./blocks/frame.jade
 
-- var title = "Оценка фронтенда: моя&nbsp;история&nbsp;о&nbsp;том, как&nbsp;сдавать&nbsp;задачи&nbsp;вовремя"
+- var title = "Time Estimation: True&nbsp;Story&nbsp;of&nbsp;Deadlines"
 
 doctype html
 html(lang='ru')
@@ -20,101 +20,105 @@ html(lang='ru')
     header.caption
       h1 !{title}
     +slide({name: 'cover', header: title, classes:'cover'})
-      p Александра Шинкевич (
+      p Aleksandra Shinkevich (
         a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
         | )
       +cover('pictures/cover.jpg')
-    +slide({header: "Кто я?", classes: "label-header white"})
+    +slide({header: "About me", classes: "label-header white"})
       ul 
-        li Глава отдела фронтенда LOVATA
-        li Фуллстек-разработчик (MEAN)
-        li Участвую в организации MinskCSS и MinskJS
+        li Lead Frontend Developer, LOVATA
+        li Full-stack MEAN Developer
       p
         img.logo(src="pictures/minskcss.png")
         img.logo(src="pictures/minskjs.png")
       +cover('pictures/white-cover.jpg')
     +slide({header: "<span class='label'>x3</span>", shout: true})
       +cover('pictures/blur-cover.jpg')
-    +slide({header: "Легко ли вам оценивать?", classes: "label-header"})
+    +slide({header: "Are you good at time estimetion?", classes: "label-header"})
+      +cover('pictures/deadline.jpg')
+    +slide({})
       +cover('pictures/puff.jpg')
-    +slide({header: "<span class='label'>Время = деньги</span>", shout: true})
+    +slide({})
+      +cover('pictures/puff2.jpg')
+    +slide({header: "<span class='label'>Time is money</span>", shout: true})
       +cover('pictures/blur-cover.jpg')
-    +slide({header: "Почему еще важно", classes: "label-header"})
+    +slide({header: "Why again", classes: "label-header"})
       ul
-        li.next Продать клиенту свое время
-        li.next Объем работ должен быть конечен
-        li.next Планирование загрузки разработчиков
-    +slide({header: "Виды оценки", classes: "label-header"})
+        li.next To sell your time to a client
+        li.next The list of tasks should be known and final
+        li.next To plan your or other's work
+    +slide({header: "Types of estimation", classes: "label-header"})
       ul
-        li.next Предварительная оценка
-          span.next  — высокоуровневая оценка
-        li.next Точная оценка
-          span.next  — оценка конкретной задачи
-        li.next Переоценка
-          span.next  — изменились требования, поменялся разработчик
-    +slide({header: "Причины ошибок в оценках", classes: "label-header"})
+        li.next Preliminary estimation
+          span.next  — hight-level estimation
+        li.next Accurate estimation
+          span.next  — low-level estimation
+        li.next Revaluation of timings
+          span.next  — something has changed (specifications, team etc.)
+    +slide({header: "Common mistakes", classes: "label-header"})
       ul
-        li.next Неточные требования или неизвестный набор задач
-        li.next Не учитываются риски
-        li.next Сложно оценить то, чего никогда не делал
-        li.next Люди ошибаются в своих оценках, так как они - люди, а не оракулы
-        li.next Недостаточное понимание ответственности
-        li.next Производительность разработчиков может отличаться разы
-    +slide({header: "<span class='label'>Как научиться</span>", shout: true, classes: 'cover'})
+        li.next Lack of docs or insufficient list of tasks
+        li.next Risks are not included
+        li.next It's hard to estimate new things: technologies, third-party API etc.
+        li.next People do mistakes
+        li.next Every developer is good (and bad) at something
+        li.next Low personal responsibility
+    +slide({header: "<span class='label'>How to learn</span>", shout: true, classes: 'cover'})
       +cover('pictures/blur-cover.jpg')
-    +slide({header: "0. Трекать время", classes: "label-header"})
+    +slide({header: "0. Track your time", classes: "label-header"})
       ul.next
         li
           a(href="https://zapier.com/blog/best-time-tracking-apps/" target="_blank") The 20 Best Time-Tracking Apps
-          |  (статья)
+          |  (article)
       p.next.center
         img(src="pictures/toggl.jpg" width="250")
-    +slide({header: "1. Уточняйте требования", classes: "label-header"})
+    +slide({header: "1. Make everything clear", classes: "label-header"})
       ul
-        li.next Не бойтесь задавать вопросы
-        li.next Убедитесь, что все моменты учтены
-        li.next Давайте интервал вместо точной цифры
-    +slide({header: "2. Детализируйте большие задачи", classes: "label-header"})
+        li.next Aks questions
+        li.next Find all bottlenecks
+        li.next Give best and worst estimations instead of an exact number
+    +slide({header: "2. Be more specific", classes: "label-header"})
       ul
-        li.next Разбивайте задачу на очевидные подзадачи
-        li.next Думайте над (конкретной) реализацией
-        li.next Не увлекайтесь дроблением
-    +slide({header: "3. Оценивайте командой", classes: "label-header"})
+        li.next Decompose high-level tasks
+        li.next Think of the (exact) implementation
+        li.next Do not decompose everything
+    +slide({header: "3. Think together", classes: "label-header"})
       ul
-        li.next Давайте задачи оценку нескольким специалистам
-        li.next Дайте на ревью более опытному разработчику
-        li.next Берите усредненные цифры для неточных оценок
-    +slide({header: "4. Делайте переоценку задач", classes: "label-header"})
+        li.next Assign time estimations to a few developers
+        li.next Do time estimation reviews
+    +slide({header: "4. Re-think your timings", classes: "label-header"})
       ul
-        li.next Подтвержайте заложенную оценку перед началом работы
-        li.next Распишите/обсудите конкретную реализацию задачи
-    +slide({header: "5. Определяйте рисковые задачи", classes: "label-header"})
+        li.next Confirm an estimation before you start to work on the feature
+        li.next Discuss excact implementation with the team
+    +slide({header: "5. Make risks visible", classes: "label-header"})
       ul
-        li.next Особо неопределенные задачи — новая технология, внешнее API и т.д.
-        li.next Отдельно выделяйте время на research таких задач
-        li.next Проговаривайте риски с менеджером/клиентом
-        li.next Затем, если возможно, оценивайте/переоценивайте
-    +slide({header: "6. Не забывайте про буфер", classes: "label-header"})
+        li.next Disclose a particularly unpredictible tasks
+        li.next Do research before implementing 'unknown' tasks
+        li.next Everyone in a team should know all risks
+        li.next Don't forget of revaluation of timings
+    +slide({header: "6. Do not forget about youself", classes: "label-header"})
       ul
-        li.next Помните, что вы никогда не тратите все 100% рабочего времени на задачу
+        li.next Remember, you don't spend 100% of your working hours on coding
         ul
-          li.next Интеграции
+          li.next Reading docs, integrations
           li.next Деплой, git
-          li.next Коммуникации
-          li.next Тестирование
-          li.next Кофе, туалет, проверка почты, общение с коллегами, прокрастинация
-    +slide({header: "7. Проблемы? Не молчите!", classes: "label-header"})
+          li.next Deploy, git, code reviews
+          li.next Meetings
+          li.next Testing
+          li.next Coffee/cookies, emails, small talks, procrastination
+    +slide({header: "7. Scream when it's crucial", classes: "label-header"})
       ul
-        li.next Советуйтесь с командой и не бойтесь просить помощи
-        li.next Клиент — тоже человек, его можно переубедить
-    +slide({header: "8. Собирайте статистику", classes: "label-header"})
+        li.next Don't be afraid of asking for help
+        li.next Inform your team/PM/client about time issues as soon as you get the idea you'll have them
+        li.next Team/PM/client are humans and you could overpersuade them to make a different decision/timings/etc.
+    +slide({header: "8. Analyze your work", classes: "label-header"})
       ul
-        li.next Оценка - это не только то, что будет
+        li.next Time estimations is not only about the future
         li.next Анализируйте оцененное и реально затраченное время
         li.next Проводите "ретро" по переоценным или недооцененным задачам
         li.next Накапливайте опыт для последующих оценок
         li.next Учитывайте коэффициент погрешности оценок (реальное / оцененное)
-    +slide({header: "Бонус. Повышение прогнозируемости", classes: "label-header"})
+    +slide({header: "Bonus. Повышение прогнозируемости", classes: "label-header"})
       ul
         li.next Улучшайте комуникацию в команде
         li.next Как только появилась задержки по срокам - сразу к менеджеру
@@ -141,16 +145,21 @@ html(lang='ru')
     +slide({header: "Как итог", classes: 'label-header'})
       figure
         blockquote 
-          p — Нельзя поверить в невозможное! 
-            br
-            | — Просто у тебя мало опыта
-        figcaption «Алиса в Зазеркалье», Льюис Кэрролл
+          p
+            b "There's no use trying,"
+            |  Alice said.
+            b  "One can't believe impossible things." 
+          p
+            | 
+            b "I dare say you haven't had much practice,"
+            |  said the Queen.
+        figcaption — Lewis Carroll, Alice's Adventures In Wonderland And Through The Looking Glass 
 
     +slide({name: 'theend', header: "Вопросы?", shout: true, classes: 'cover label-header'})
       p.end-link 
         a.bigger(href="http://bit.ly/fc2017-estimation" target="_blank") bit.ly/fc2017-estimation
         br
-        | Александра Шинкевич (
+        | Aleksandra Shinkevich (
         a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
         | )
       +cover('pictures/blur-cover.jpg')
