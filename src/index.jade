@@ -40,6 +40,27 @@ html(lang='ru')
       +cover('pictures/puff.jpg')
     +slide({})
       +cover('pictures/puff2.jpg')
+    +slide({header: 'Myers–Briggs Type Indicator', classes: "label-header"})
+      table.next
+        thead
+          tr
+            th Sensing
+            th Intuition
+        tbody.next
+          tr
+            td The reality of how things are
+            td Possibilities of how things could be
+          tr.next
+            td Facts and details
+            td Connection between things
+          tr.next
+            td Specific, litteral
+            td Figurative, poetic
+      p.next
+        a(href="https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator") Wikipedia
+        |  (en)
+    +slide({})
+      +cover('pictures/puff.jpg')
     +slide({header: "<span class='label'>Time is money</span>", shout: true})
       +cover('pictures/blur-cover.jpg')
     +slide({header: "Why again", classes: "label-header"})
@@ -50,7 +71,7 @@ html(lang='ru')
     +slide({header: "Types of estimation", classes: "label-header"})
       ul
         li.next Preliminary estimation
-          span.next  — hight-level estimation
+          span.next  — high-level estimation
         li.next Accurate estimation
           span.next  — low-level estimation
         li.next Revaluation of timings
@@ -93,15 +114,14 @@ html(lang='ru')
     +slide({header: "5. Make risks visible", classes: "label-header"})
       ul
         li.next Disclose a particularly unpredictible tasks
-        li.next Do research before implementing 'unknown' tasks
         li.next Everyone in a team should know all risks
+        li.next Do research before implementing 'unknown' tasks
         li.next Don't forget of revaluation of timings
     +slide({header: "6. Do not forget about youself", classes: "label-header"})
       ul
         li.next Remember, you don't spend 100% of your working hours on coding
         ul
           li.next Reading docs, integrations
-          li.next Деплой, git
           li.next Deploy, git, code reviews
           li.next Meetings
           li.next Testing
@@ -114,18 +134,19 @@ html(lang='ru')
     +slide({header: "8. Analyze your work", classes: "label-header"})
       ul
         li.next Time estimations is not only about the future
-        li.next Анализируйте оцененное и реально затраченное время
-        li.next Проводите "ретро" по переоценным или недооцененным задачам
-        li.next Накапливайте опыт для последующих оценок
-        li.next Учитывайте коэффициент погрешности оценок (реальное / оцененное)
-    +slide({header: "Bonus. Повышение прогнозируемости", classes: "label-header"})
+        li.next Gather your experiense and analyze estimated and logged time
+        li.next Do retro meetings on over- and underestimated tasks
+        li.next Calculate your margin of error
+    +slide({})
+      p 
+        i k = logged time / estimation time
+    +slide({header: "Bonus. PM's tips", classes: "label-header"})
       ul
-        li.next Улучшайте комуникацию в команде
-        li.next Как только появилась задержки по срокам - сразу к менеджеру
-        li.next Комбинируйте людей в команды так, чтобы им было комфортно
-        li.next Группируйте людей (по отделам, по проектам)
-        li.next Пробуйте различные техники программирования (парное, экстремальное)
-    +slide({header: "Хочу больше", classes: "label-header"})
+        li.next Improve communicative skills (yours or your team)
+        li.next Motivate your team to learn how to estimate
+        li.next Try to group people in the office by some attribute (departments, projects)
+        li.next Implement different development methodologies (waterfall, agile, extreme programming)
+    +slide({header: "What to read", classes: "label-header"})
       ul
         li 
           a(href="https://habrahabr.ru/company/ruswizards/blog/151029/" target="_blank") Реальная оценка или почему наступают дедлайны
@@ -142,7 +163,7 @@ html(lang='ru')
         li  
           a(href="https://habrahabr.ru/post/308494/" target="_blank") Как дать адекватную оценку времени, когда неопределённость бьёт по башке
           |  (Хабр) 
-    +slide({header: "Как итог", classes: 'label-header'})
+    +slide({header: "What next?", classes: 'label-header'})
       figure
         blockquote 
           p
@@ -155,7 +176,7 @@ html(lang='ru')
             |  said the Queen.
         figcaption — Lewis Carroll, Alice's Adventures In Wonderland And Through The Looking Glass 
 
-    +slide({name: 'theend', header: "Вопросы?", shout: true, classes: 'cover label-header'})
+    +slide({name: 'theend', header: "Thank you!", shout: true, classes: 'cover label-header'})
       p.end-link 
         a.bigger(href="http://bit.ly/fc2017-estimation" target="_blank") bit.ly/fc2017-estimation
         br
