@@ -1,10 +1,9 @@
-# Оценка фронтенда: моя история о том, как сдавать задачи вовремя
-Презентация для выступления на [FrontendConf2017](http://frontendconf.ru/2017/abstracts/2538.html).
+# Time Estimation: Short Cookbook for Developers
+Slides for the talk on [FrontTalks 2017](http://fronttalks.ru/).
 
 
-Давайте будем честны: нет такого разработчика, который хотя бы раз за свою карьеру не лажал со сроками сдачи проекта. Порой клиент требует "всего лишь добавить вот тут иконку", а реально такая задача оборачивается многочасовым ковырянием в коде и, возможно, даже сменой используемой библиотеки/фреймворка/модуля или написанием собственного велосипеда с костылями и палками. Не стоит и говорить, что некоторые задачи практически невозможно оценить до того, как к ним приступишь. А если ты новичок, то подобные вопросы просто ставят в тупик.
-
-В докладе я расскажу о своем личном опыте оценки фронтендовых задач и о том, как отказаться от распространенного метода оценки под названием "пальцем в небо". Собрав это в некий сборник советов и практик, которые мы успешно (и не очень) применяем в нашей компании, я раскрою тайну, что (и почему) отвечать на такие животрепещущие вопросы как "Когда ты закончишь эту задачу?" и "Сколько это потребует времени?". Будут также трюки и хаки, которые помогут повысить эффективность и прогнозируемость сроков работы. 
+Let's be honest: there is no developer in the world who have never ever missed a deadline. Modern frontend is complicated and an obvious task could turn out as a full code refactoring of the module or even the whole project. And sometimes there is no way to estimate so-called "unknown" tasks.
+In my talk I'll give a bunch of recipes of how to make the process of estimation simpler and clearer for developers and to stop shooting in the dark with numbers.
 
 
 ## Что еще посмотреть по теме
@@ -15,7 +14,7 @@
 * [Оценка задач, выполняемых по итеративной разработке](https://www.slideshare.net/ExigenServices/ss-26460568) (SlideShare) 
 * [Как дать адекватную оценку времени, когда неопределённость бьёт по башке](https://habrahabr.ru/post/308494/) (Хабр)
 
-## Просмотр и запуск презентации
+## How to launch slides
 ### 1. View the presentation
 Open `index.html` in the browser and view slides
 
