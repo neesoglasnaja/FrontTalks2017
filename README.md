@@ -14,6 +14,8 @@ In my talk I'll give a bunch of recipes of how to make the process of estimation
 * [Оценка задач, выполняемых по итеративной разработке](https://www.slideshare.net/ExigenServices/ss-26460568) (SlideShare) 
 * [Как дать адекватную оценку времени, когда неопределённость бьёт по башке](https://habrahabr.ru/post/308494/) (Хабр)
 
+Amazing pixel art by [Octavi Navarro](http://www.pixelshuh.com/) and [Joy Intermedia](https://dribbble.com/shots/1337078--animated-Designer-vs-Developer)
+
 ## How to launch slides
 ### 1. View the presentation
 Open `index.html` in the browser and view slides

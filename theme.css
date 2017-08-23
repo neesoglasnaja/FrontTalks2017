@@ -11,6 +11,26 @@
 .slide h2 {
   color: #a11212;
 }
+.slide .formula {
+  font-size: 48px;
+  margin: 50px auto 0;
+  width: 600px;
+  text-align: center !important;
+  font-style: italic;
+}
+.slide .formula th,
+.slide .formula td {
+  padding: 0 !important;
+}
+.slide .formula th {
+  width: 20%;
+  vertical-align: middle;
+  background: none !important;
+  text-align: right !important;
+  padding-right: 30px !important;
+  font-size: 120%;
+  font-weight: normal;
+}
 .html {
   color: #666;
 }
