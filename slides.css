@@ -63,6 +63,9 @@ iframe {
 }
 .logo {
   width: 150px;
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 90px;
 }
 .logo + .logo {
   margin-left: 50px;

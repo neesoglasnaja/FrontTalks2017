@@ -31,6 +31,7 @@ html(lang='ru')
       p
         img.logo(src="pictures/minskcss.png")
         img.logo(src="pictures/minskjs.png")
+        img.logo(src="pictures/css-minsk-js.svg")
       +cover('pictures/white-cover.jpg')
     +slide({header: "<span class='label'>x3</span>", shout: true})
       +cover('pictures/blur-cover.jpg')
@@ -46,13 +47,13 @@ html(lang='ru')
           tr
             td The reality of how things are
             td Possibilities of how things could be
-          tr.next
+          tr
             td Facts and details
             td Connection between things
-          tr.next
+          tr
             td Specific, literal
             td Metaphoric, poetic
-          tr.next
+          tr
             td Real: color, sound, shape
             td Abstract: time, ideas
       p.next
@@ -67,7 +68,7 @@ html(lang='ru')
         li.next To sell your time to a client
         li.next The list of tasks should be known
         li.next To plan your or other's work
-    +slide({header: "Types of Estimation", classes: "label-header"})
+    +slide({header: "Types of estimation", classes: "label-header"})
       ul
         li.next Preliminary estimation
           span.next  — high-level estimation
@@ -85,7 +86,7 @@ html(lang='ru')
         li.next Low personal responsibility
     +slide({header: "<span class='label'>How to learn</span>", shout: true, classes: 'cover'})
       +cover('pictures/blur-cover.jpg')
-    +slide({header: "0. Track your time", classes: "label-header"})
+    +slide({header: "Step 0. Track your time", classes: "label-header"})
       +cover('pictures/slides/0.jpg')
       ul.next
         li
@@ -142,7 +143,7 @@ html(lang='ru')
     +slide({header: "8. Analyze your work", classes: "label-header"})
       +cover('pictures/slides/8.jpg')
       ul
-        li.next Time estimation is not only about the future
+        li.next Time estimation is not about predictions
         li.next Gather your experiense and analyze estimated and logged time
         li.next Do "retro" on over- and underestimated tasks
         li.next Calculate your index of estimation errors
@@ -159,24 +160,7 @@ html(lang='ru')
         li.next Motivate your team to learn how to estimate
         li.next Try to group people in the office by some attribute (departments/projects)
         li.next Implement different development methodologies (waterfall, agile, extreme programming)
-    +slide({header: "What to read", classes: "label-header"})
-      ul
-        li 
-          a(href="https://habrahabr.ru/company/ruswizards/blog/151029/" target="_blank") Реальная оценка или почему наступают дедлайны
-          |  (Хабр) 
-        li  
-          a(href="https://dou.ua/lenta/articles/ob-otsenke-vremeni/" target="_blank") Некоторые правила улучшения временнóй оценки задачи
-          |  (статья) 
-        li  
-          a(href="https://www.slideshare.net/VLDCORP/ss-10635744" target="_blank") Оценки имеют значение
-          |  (SlideShare) 
-        li  
-          a(href="https://www.slideshare.net/ExigenServices/ss-26460568" target="_blank") Оценка задач, выполняемых по итеративной разработке
-          |  (SlideShare) 
-        li  
-          a(href="https://habrahabr.ru/post/308494/" target="_blank") Как дать адекватную оценку времени, когда неопределённость бьёт по башке
-          |  (Хабр) 
-    +slide({header: "What next?", classes: 'label-header'})
+    +slide({header: "What's next?", classes: 'label-header'})
       figure
         blockquote 
           p
@@ -187,7 +171,9 @@ html(lang='ru')
             | 
             b "I dare say you haven't had much practice,"
             |  said the Queen.
-        figcaption — Lewis Carroll, Alice's Adventures In Wonderland And Through The Looking Glass 
+        figcaption Lewis Carroll,
+          br
+          | Alice's Adventures In Wonderland And Through The Looking Glass 
 
     +slide({name: 'theend', header: "Thank you!", shout: true, classes: 'cover label-header'})
       p.end-link 
